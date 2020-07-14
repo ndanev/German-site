@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #00a6e5;
+  font-size: 37px;
+  font-family: 'Mitr', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+.section-subtitle {
+  color: #00a6e5;
+  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .section-subtitle {
+    font-size: 24px;
+  }
+}
+
+.section-lead {
+  font-size: 21px;
+  color: #404041;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .section-lead {
+    font-size: 16px;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/Ebene1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero .arrow-down {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .hero .arrow-down {
+    right: unset;
+    left: 50%;
+    bottom: 10px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 567px) {
+  .hero .arrow-down img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.hero .container {
+  max-width: 1476px;
+}
+
+.hero-image-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 567px) {
+  .hero-image-top img {
+    width: 50px;
+  }
+}
+
+.hero-image-bottom {
+  margin-top: 150px;
+}
+
+@media (max-width: 767px) {
+  .hero-image-bottom {
+    margin-top: 0;
+  }
+}
+
+.category-card {
+  text-align: center;
+}
+
+.category-card img {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .category-card {
+    margin-bottom: 50px;
+  }
+}
+
+.category-card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .category-card-text {
+    font-size: 16px;
+  }
+}
+
+.jobs-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.jobs-item:hover {
+  text-decoration: none;
+}
+
+.jobs-item .jobs-item-left {
+  padding: 15px 35px 15px 15px;
+  background-color: #00a6e5;
+  width: 30%;
+  color: #ffffff;
+  font-size: 21px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs-item .jobs-item-left img {
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .jobs-item .jobs-item-left {
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.jobs-item .jobs-item-right {
+  width: 70%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #6b0c68;
+  color: #ffffff;
+  font-size: 21px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .jobs-item .jobs-item-right {
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.section-man {
+  background-image: url("../images/Ebene3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+}
+
+.section-man .container {
+  max-width: 1476px;
+}
+
+.section-man .section-subtitle {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 500;
+}
+
+.section-form form .form-control {
+  background-color: #e3e2e2;
+  border: none;
+  padding: 22px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-bottom .footer-bottom-text {
+  color: #404041;
+  font-size: 21px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .form-bottom .footer-bottom-text {
+    font-size: 16px;
+  }
+}
+
+.submit-form {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #6b0c68;
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: 'Mitr', sans-serif;
+}
+
+.section-people {
+  height: 618px;
+  background-image: url("../images/Ebene2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .section-people {
+    height: unset;
+    background-image: unset;
+    background-repeat: unset;
+    background-position: unset;
+    background-size: unset;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #2b2a2a;
+}
+
+.footer .footer-card {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.footer .footer-card .footer-title {
+  color: #00a6e5;
+  font-weight: 500;
+  font-family: 'Mitr', sans-serif;
+  margin-bottom: 15px;
+}
+
+.footer .footer-card .footer-subtitle {
+  color: #fdfcfc;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.footer .footer-card .footer-button-wrapper {
+  margin-top: 25px;
+}
+
+.footer .footer-card .footer-button {
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: #6b0c68;
+  font-size: 21px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.copyrights {
+  padding: 10px 0;
+  background-color: #1e1e1e;
+}
+
+.copyrights a {
+  color: #aaa8a8;
+  font-size: 21px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
