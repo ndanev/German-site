@@ -61,7 +61,7 @@ a {
 }
 
 .section-lead {
-  font-size: 21px;
+  font-size: 18px;
   color: #404041;
   font-family: 'Open Sans', sans-serif;
 }
@@ -337,5 +337,9 @@ a {
   color: #aaa8a8;
   font-size: 21px;
   text-decoration: none;
+}
+
+.nav-tabs {
+  border-bottom: none;
 }
 /*# sourceMappingURL=style.css.map */
